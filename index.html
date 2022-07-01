@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>box model</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Tusiime's Website.">
+        <style>
+            .container{
+
+                height:620px;
+                width:100%;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto auto auto;
+
+            }
+
+            .container-item{
+                border:gray ;
+                text-align: center;
+                color: black;
+                font-size: 20px;
+                cursor: pointer;
+                font-family: consolas;
+                height: 100%;
+            }
+            .container-item:hover{
+                 transition:1s, ease-in;
+                 height:100%;
+            }
+                .btn1{
+                    background-color:#cccccc;
+                }
+                .btn2{
+                    background-color:#3300cc;
+                }
+                .btn3{
+                    background-color:#9900ff;
+                }
+                .btn4{
+                    background-color:#9999ff;
+                }
+                .btn5{
+                    background-color:#ffcc99;
+                }
+                .btn1:hover{
+
+                    background-color:red;
+                    color:white;
+                }
+                .btn2:hover{
+                    background-color:purple;
+                    color:orange;
+                }
+                .btn3:hover{
+                    background-color:yellow;
+                    color:black;
+                }
+                .btn4:hover{
+                    background-color:green;
+                    color:yellow;
+                }
+                .btn5:hover{
+                    background-color:orange;
+                    color:blue;
+                }
+        </style>
+    </head>
+    <body style="background-color:gray;">
+        <div class="container">
+            <button type="button" onclick="location.href='First Page.html'" target="_blank" class="container-item btn1" style="  grid-area:1/1/2/2; " >My Bio Data</button>
+            <button type="button" onclick="location.href='First Page.html'" target="_blank"class="container-item btn2" style="  grid-area:1/3/2/4; ">My photo</button>
+            <button type="button" onclick="location.href='First Page.html'" target="_blank"class="container-item btn3" style="  grid-area:2/2/3/3; ">My Education History</button>
+            <button type="button" onclick="location.href='hobbies.html'" target="_blank"class="container-item btn4" style="  grid-area:3/1/4/2; ">My Hobbies</button>
+            <button type="button" onclick="location.href='contact.html'" target="_blank"class="container-item btn5" style="  grid-area:3/3/4/4; ">Contact Me</button>
+        </div>
+    </body>
+</html>
